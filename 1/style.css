@@ -1,0 +1,43 @@
+.card {
+  background-color: black;
+  padding: 30px;
+  border-radius: 5px;
+  margin: 10px;
+  width: 300px;
+  height: px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  overflow: hidden;
+  align-items: flex-start;
+}
+.card img {
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  object-fit: cover;
+
+  
+}
+.card h3 {
+  margin: 0;
+  padding: 10px 0;
+  text-align: left;
+  
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* <-- บอกให้มันขึ้นบรรทัดใหม่ได้ */
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* เพิ่มช่องว่างระหว่างกล่อง */
+}
+
+h3{
+  color: white;
+  font-size: 32px;
+  margin-bottom: 10px;
+  text-align: left;
+}
