@@ -22,7 +22,6 @@ body {
     grid-template-columns: repeat(7, 75px);
     grid-auto-rows: 75px;
     gap: 6px;
-    /* ช่องว่างระหว่างกล่อง */
 }
 
 
