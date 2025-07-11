@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.chart-container {
+    width: 100%;
+}
+
+.chart-header {
+    display: grid;
+    grid-template-columns: 50px 200px 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+}
+.header-id {
+    padding: 10px 0;
+}
+.header-student,
+.header-score {
+    padding: 10px 0;
+    text-align: center
+}
+
+.chart-row {
+    display: grid;
+    grid-template-columns: 50px 200px 1fr;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 5px 0;
+}
+
+.row-id {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.row-student {
+    font-size: 1.1em;
+    color: #333;
+    
+}
+
+.score-container {
+    position: relative;
+}
+
+.score-bar {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.score-bar:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* สีสำหรับแต่ละคะแนน */
+.score-98 {
+    background-color: #888888;
+    width: 98%;
+}
+
+.score-85 {
+    background-color: #4444ff;
+    width: 85%;
+}
+
+.score-65 {
+    background-color: #00aa44;
+    width: 65%;
+}
+
+.score-72 {
+    background-color: #8844bb;
+    width: 72%;
+}
+
+.score-69 {
+    background-color: #ff4444;
+    width: 69%;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    
+    .chart-header,
+    .chart-row {
+        grid-template-columns: 40px 150px 1fr;
+        gap: 10px;
+    }
+    
+    .row-student {
+        font-size: 0.9em;
+    }
+    
+    .score-bar {
+        height: 35px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .chart-header,
+    .chart-row {
+        grid-template-columns: 30px 120px 1fr;
+        gap: 8px;
+    }
+    
+    .row-student {
+        font-size: 0.8em;
+    }
+    
+    .score-bar {
+        height: 30px;
+        font-size: 0.9em;
+        padding-left: 8px;
+    }
+}
